@@ -69,7 +69,7 @@ router.post("/reply/:id", async (req, res) => {
 
         const updatedMessage = await Message.findByIdAndUpdate(
             messageId,
-            { reply },
+            { reply: reply },
             { new: true }
         );
 
