@@ -55,12 +55,12 @@ export default function StoryCard({ username }) {
 
         <p className="link">{profileLink}</p>
 
-        <p className="hint">Tap link and send me messages 👀</p>
+        <p className="hint">Tap link and send me messages</p>
 
       </div>
 
       <button className="download-btn" onClick={downloadCard}>
-        Download Story Card
+        Download
       </button>
 
     </div>
