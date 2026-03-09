@@ -1,0 +1,143 @@
+/* PAGE BACKGROUND */
+
+.send-page{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background: linear-gradient(135deg,#ff7ac6,#ff4ecd,#9b5cff);
+
+background-size:300% 300%;
+
+animation: gradientMove 8s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+
+
+/* CARD */
+
+.send-card{
+
+width:400px;
+
+padding:30px;
+
+border-radius:20px;
+
+background: rgba(255,255,255,0.2);
+
+backdrop-filter: blur(20px);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+text-align:center;
+
+}
+
+
+
+/* TITLE */
+
+.send-card h2{
+
+color:white;
+
+font-size:28px;
+
+}
+
+
+
+/* USERNAME */
+
+.username{
+
+color:white;
+
+opacity:0.9;
+
+font-size:16px;
+
+}
+
+
+
+/* TEXTAREA */
+
+.send-card textarea{
+
+height:120px;
+
+border:none;
+
+border-radius:12px;
+
+padding:12px;
+
+font-size:14px;
+
+resize:none;
+
+outline:none;
+
+background:rgba(255,255,255,0.9);
+
+}
+
+
+
+/* BUTTON */
+
+.send-card button{
+
+padding:14px;
+
+border:none;
+
+border-radius:30px;
+
+background: linear-gradient(135deg,#ff4ecd,#9b5cff);
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+
+/* BUTTON HOVER */
+
+.send-card button:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+
+}

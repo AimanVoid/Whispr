@@ -1,0 +1,151 @@
+/* PAGE BACKGROUND */
+
+.login-page{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(
+        135deg,
+        #ff7ac6,
+        #ff4ecd,
+        #9b5cff
+    );
+
+    background-size:300% 300%;
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+
+
+/* LOGIN CARD */
+
+.login-card{
+
+    width:380px;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    background: rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(25px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
+
+    text-align:center;
+
+    animation: cardPop 0.6s ease;
+}
+
+@keyframes cardPop{
+    from{
+        transform:scale(0.9);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+
+
+/* TITLE */
+
+.login-card h2{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+
+
+/* INPUTS */
+
+.login-card input{
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:rgba(255,255,255,0.8);
+
+    transition:0.3s;
+}
+
+
+
+/* INPUT FOCUS */
+
+.login-card input:focus{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 12px rgba(255,0,200,0.6);
+}
+
+
+
+/* BUTTON */
+
+.login-card button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:white;
+
+    background: linear-gradient(
+        135deg,
+        #ff4ecd,
+        #9b5cff
+    );
+
+    transition:0.3s;
+}
+
+
+
+/* BUTTON HOVER */
+
+.login-card button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 25px rgba(255,0,200,0.4);
+}
