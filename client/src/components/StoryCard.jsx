@@ -50,7 +50,7 @@ export default function StoryCard({ username }) {
         </head>
         <body>
         <img src="${image}" />
-        <p>Long press image to save 📥</p>
+        
         </body>
         </html>
       `);
@@ -81,12 +81,11 @@ export default function StoryCard({ username }) {
 
         <p className="link">{profileLink}</p>
 
-        <p className="hint">Tap link and send me messages 👀</p>
 
       </div>
 
       <button className="download-btn" onClick={downloadCard}>
-        Download Story Card
+        Download
       </button>
 
     </div>
