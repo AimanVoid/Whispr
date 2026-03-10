@@ -27,12 +27,12 @@ app.post("/api/send", async (req,res)=>{
 
     try{
 
-        const {to,text} = req.body;
+        const {receiver,text} = req.body;
 
-        const message = new Message({
-            receiver: to,
-            text: text
-        });
+const message = new Message({
+    receiver: receiver,
+    text: text
+});
 
         await message.save();
 
